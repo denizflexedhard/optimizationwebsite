@@ -239,6 +239,10 @@ const App = () => {
                       </span>
                       <span className="text-[10px] text-slate-400 font-mono">#{product.urun_id}</span>
                     </div>
+                    {/* Karttaki açıklama alanı: line-clamp ve break-words eklendi */}
+                    <p className="text-slate-500 text-xs line-clamp-2 leading-relaxed break-words h-8 mb-2">
+                      {product.display_text}
+                    </p>
                     <button 
                       className="w-full flex items-center justify-center gap-2 bg-slate-900 text-white py-4 rounded-2xl font-black text-sm hover:bg-indigo-600 transition-all shadow-lg shadow-slate-200"
                     >
@@ -322,7 +326,7 @@ const App = () => {
                     <span className="text-xs font-black uppercase tracking-widest">{selectedProduct.kategori || 'Yedek Parça'}</span>
                   </div>
                   <h2 className="text-3xl font-black text-slate-900 leading-tight">{selectedProduct.display_baslik}</h2>
-                  <div className="text-slate-400 text-sm font-mono">Stok Kodu: #{selectedProduct.urun_id}</div>
+                  <div className="text-slate-400 text-sm font-mono text-ellipsis overflow-hidden">Stok Kodu: #{selectedProduct.urun_id}</div>
                 </div>
 
                 <div className="flex items-baseline gap-2">
@@ -330,11 +334,12 @@ const App = () => {
                   <span className="text-slate-400 text-sm line-through">₺{(selectedProduct.fiyat * 1.2).toLocaleString()}</span>
                 </div>
 
-                <div className="bg-slate-50 p-6 rounded-3xl space-y-4">
+                <div className="bg-slate-50 p-6 rounded-3xl space-y-4 max-w-full">
                   <h4 className="font-bold flex items-center gap-2 text-slate-700">
                     <Settings size={18}/> Parça Özellikleri
                   </h4>
-                  <p className="text-slate-600 leading-relaxed text-sm whitespace-pre-wrap">
+                  {/* Detay alanındaki açıklama: whitespace-pre-wrap ve break-words ile sığdırma sağlandı */}
+                  <p className="text-slate-600 leading-relaxed text-sm whitespace-pre-wrap break-words overflow-wrap-anywhere">
                     {selectedProduct.display_text}
                   </p>
                 </div>
