@@ -19,7 +19,7 @@ const CONFIG = {
   SUPABASE_URL: "https://atgmkqjlgremodizgrwj.supabase.co",
   SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF0Z21rcWpsZ3JlbW9kaXpncndqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwODIzMzUsImV4cCI6MjA4NDY1ODMzNX0.Nzw4XAQTNIaeqKltO0ailB5oG1TBydaiTfQiRP5PMe0",
   WHATSAPP_NO: "905554443322", // Müşterinin WhatsApp numarası
-  FIRM_NAME: "Dardo Oto Yedek Parça",
+  FIRM_NAME: "Kuzey Oto Yedek Parça",
   ADDRESS: "İkitelli Organize Sanayi Bölgesi, İstanbul",
   WORKING_HOURS: "Pzt - Cmt: 09:00 - 19:00"
 };
